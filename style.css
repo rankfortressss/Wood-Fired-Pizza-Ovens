@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Global Styles */
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  padding: px 0%;
+  background: #ffffff;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  height: 89vh;
+}
+.main-wrapper{
+
+  flex: 2;  overflow-y: none;
+}
+.side-bar{
+  background: #faf9f9;
+  flex: .3;
+  padding: 40px;
+  /* background-color: white; */
+}
+
+.side-bar ul{
+  padding: 0 40px;
+  list-style: none;
+}
+
+.side-bar{
+  background: rgb(230, 230, 231);
+}
+
+
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .side-bar{
+    background: #114;
+    color: white !important;
+  }
+  .side-bar a{
+    color: white !important;
+  }
+}
+
+/* Navigation Menu Styles */
+
+nav.nav-menu {
+  width: 100%;
+  background-color:#fec52e;
+  padding: 10px;
+  
+}
+
+nav.nav-menu ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: clamp(.8rem, 1.2vw, 2rem); 
+}
+
+.nav-menu .nav-item {
+  padding: 10px;
+  transition: background-color 500ms ease-in-out;
+  
+}
+
+.nav-menu .nav-item:hover {
+  cursor: pointer;
+  background-color: #00000000;
+  
+}
+
+.nav-menu .nav-item a{
+  text-decoration: none;
+  color: #ffffff;
+  
+}
+
+
+/* Main Content Wrapper Styles */
+.main-wrapper {
+  background: white;
+  padding: 40px 20%;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section.head,
+section.youtube-embed {
+  text-align: center;
+}
+
+.button-link {
+  display: block;
+  margin: 20px 0 0 0;
+  padding: 10px 25px;
+  width: fit-content;
+  background: #fec52e;
+  border-radius: 0px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 0.3s transform ease-in-out;
+  text-align: center;
+  
+ 
+  
+}
+
+.button-link:hover {
+  transform: scale(1.05);
+  background-color: #fec52e;
+ 
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 30px;
+  color: #000000;
+}
+h4 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+
+}
+
+ul{
+  padding-left: 30px;
+  
+  }
+  
+  .side ul{
+    text-align: justify;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    font-family: "Cormorant SC", sans-serif;
+    font-size:30px;
+
+  }
+
+  ol{
+    padding-left: 40px;
+    }
+    
+    .side ol{
+      text-align: justify;
+      margin-bottom: 10px;
+      line-height: 1.5rem;
+      font-family: "Cormorant SC", sans-serif;
+      font-size:30px;
+  
+    }
+
+p {
+  text-align: justify;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  float: center;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.two-col div {
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 20%;
+  }
+
+  .two-col {
+    flex-direction: column;
+  }
+
+  .two-col div {
+    width: 100%;
+  }
+
+  .main-wrapper {
+    padding: 5%;
+  }
+}
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.473)), url("https://thecharlestonarborist.com/wp-content/uploads/2023/05/The-Charleston-Arborist-video-fallback.jpg");
+  /* Set a specific height */
+  height: 450px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-30%, -30%);
+  color: #ffffff(255, 255, 255);
+  font-weight:500;
+  font-size: 16px;
+  width: 100%;
+  padding: 20px;
+}
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+ background-color: #5d3073;
+ color: #ffffff;
+ border-radius: 100%;
+}
